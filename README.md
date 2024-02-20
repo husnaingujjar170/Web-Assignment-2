@@ -21,11 +21,11 @@ This landing page project aims to demonstrate proficiency in HTML and CSS3 by cr
 
 ## Preview
 
-![Header](assignment1_task1/header.png)
+![Header](header.png)
 *Header section example*
 
 
-![Footer](assignment1_task1/footer.png)
+![Footer](footer.png)
 *Footer section example*
 
 ## Usage
@@ -40,10 +40,10 @@ This project involves designing separate sign-in and sign-up pages with comprehe
 
 ## Screenshots
 *Sign-In Page*
-![Sign-In Page](assignment1_task2/SignIn.png)
+![Sign-In Page](SignIn.png)
 
 *Sign-Up Page*
-![Sign-Up Page](assignment1_task2/SignUp.png)
+![Sign-Up Page](SignUp.png)
 
 
 ## Usage
