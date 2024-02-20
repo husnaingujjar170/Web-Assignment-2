@@ -21,11 +21,11 @@ This landing page project aims to demonstrate proficiency in HTML and CSS3 by cr
 
 ## Preview
 
-![Header](header.png)
+![Header](assignment1_task1/header.png)
 *Header section example*
 
 
-![Footer](footer.png)
+![Footer](assignment1_task1/footer.png)
 *Footer section example*
 
 ## Usage
