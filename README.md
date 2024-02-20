@@ -40,10 +40,10 @@ This project involves designing separate sign-in and sign-up pages with comprehe
 
 ## Screenshots
 *Sign-In Page*
-![Sign-In Page](SignIn.png)
+![Sign-In Page](assignment1_task2/SignIn.png)
 
 *Sign-Up Page*
-![Sign-Up Page](SignUp.png)
+![Sign-Up Page](assignment1_task2/SignUp.png)
 
 
 ## Usage
