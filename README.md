@@ -43,7 +43,7 @@ This project involves designing separate sign-in and sign-up pages with comprehe
 ![Sign-In Page](Assignment1_task2/SignIn.png)
 
 *Sign-Up Page*
-![Sign-Up Page](Assignment1_task2/signup.html)
+![Sign-Up Page](Assignment1_task2/SignUp.png)
 
 ## Usage
 Open the `index.html` files for the sign-in and sign-up pages in a web browser to view them.
