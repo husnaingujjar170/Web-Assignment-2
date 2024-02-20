@@ -40,10 +40,10 @@ This project involves designing separate sign-in and sign-up pages with comprehe
 
 ## Screenshots
 *Sign-In Page*
-![Sign-In Page](assignment1_task2/SignIn.png)
+![Sign-In Page](Assignment1_task2/SignIn.png)
 
 *Sign-Up Page*
-![Sign-Up Page](assignment1_task2/SignUp.pngg)
+![Sign-Up Page](Assignment1_task2/SignUp.png)
 
 ## Usage
 Open the `index.html` files for the sign-in and sign-up pages in a web browser to view them.
