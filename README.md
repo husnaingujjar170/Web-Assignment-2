@@ -21,12 +21,13 @@ This landing page project aims to demonstrate proficiency in HTML and CSS3 by cr
 
 ## Preview
 
-![Header](Assignment1_task1/header.png)
 *Header section example*
+![Header](Assignment1_task1/header.png)
 
 
-![Footer](Assignment1_task1/footer.png)
 *Footer section example*
+![Footer](Assignment1_task1/footer.png)
+
 
 ## Usage
 To view the landing page, open the `index.html` file in a web browser.
