@@ -41,10 +41,10 @@ To view the landing page, open the `index.html` file in a web browser.
 This project involves designing separate sign-in and sign-up pages with comprehensive styling using HTML and CSS.
 
 ## Screenshots
-*Sign-In Page*
+Sign-In Page
 ![Sign-In Page](Assignment1_task2/SignIn.png)
 
-*Sign-Up Page*
+Sign-Up Page
 ![Sign-Up Page](Assignment1_task2/SignUp.png)
 
 ## Usage
@@ -68,10 +68,10 @@ Provided clear error messages.
 Thoroughly tested the validation process to ensure effectiveness.
 
 ## Screenshots
-*Sign-In Page*
+Sign-In Page
 ![Sign-In Page](Assignment2_task2/signin.png)
 
-*Sign-Up Page*
+Sign-Up Page
 ![Sign-Up Page](Assignment2_task2/signup.png)
 ## Usage
 Open the HTML files for the sign-in and sign-up pages in a web browser. Ensure JavaScript is enabled for validation to work properly.
@@ -93,7 +93,7 @@ This repository contains a practice exercise demonstrating the implementation of
 - Styled call-to-action buttons using Bootstrap button classes.
 
 ## Screenshots
-*BootStrap Practice *
+BootStrap Practice 
 ![BootStrap Practice](Assignment2_task3/Bootstrap.png)
 ![BootStrap Practice](Assignment2_task3/Bootstrap_Remaining.png)
 ## Usage
