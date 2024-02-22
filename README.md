@@ -94,7 +94,8 @@ This repository contains a practice exercise demonstrating the implementation of
 
 ## Screenshots
 *BootStrap Practice *
-![BootStrap Practice](Assignment2_task3/)
+![BootStrap Practice](Assignment2_task3/Bootstrap.png)
+![BootStrap Practice](Assignment2_task3/Bootstrap_Remaining.png)
 ## Usage
 To view the practice webpage, simply open the HTML file in a web browser.
 
