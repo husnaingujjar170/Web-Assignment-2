@@ -50,13 +50,6 @@ This project involves designing separate sign-in and sign-up pages with comprehe
 ## Usage
 Open the `index.html` files for the sign-in and sign-up pages in a web browser to view them.
 
-## Credits
-This project was created by Husnain Mahmood.
-
-## License 
-This project is licensed under the [MIT License](LICENSE).
-
-
 # Task 2: JavaScript form validation
 ## Description
 Task 2 involves implementing form validation using JavaScript for the sign-in and sign-up forms.
