@@ -13,9 +13,18 @@ function validateSignInForm() {
         return false;
     }
 
+    if (username.length < 4 || username.length > 20) {
+        alert('Username must be between 4 and 20 characters');
+        return false;
+    }
+
+    if (password.length < 6 || password.length > 20) {
+        alert('Password must be between 6 and 20 characters');
+        return false;
+    }
+
     return true;
 }
-
 function validateSignUpForm() {
     var username = document.getElementById('signupUsername').value.trim();
     var email = document.getElementById('email').value.trim();
@@ -23,7 +32,7 @@ function validateSignUpForm() {
     var confirmPassword = document.getElementById('confirmPassword').value.trim();
     var phoneNumber = document.getElementById('phoneNumber').value.trim();
     var zipCode = document.getElementById('zipCode').value.trim();
-    var country = document.getElementById('country').value.trim(); // New field
+    var country = document.getElementById('country').value.trim();
 
     if (username === '') {
         alert('Please enter a username');
@@ -43,6 +52,11 @@ function validateSignUpForm() {
         return false;
     }
 
+    if (password.length < 6 || password.length > 20) {
+        alert('Password must be between 6 and 20 characters');
+        return false;
+    }
+
     if (confirmPassword === '') {
         alert('Please confirm your password');
         return false;
@@ -54,12 +68,12 @@ function validateSignUpForm() {
     }
 
     if (phoneNumber !== '' && !isValidPhoneNumber(phoneNumber)) {
-        alert('Please enter a valid phone number');
+        alert('Please enter a valid phone number (10 digits)');
         return false;
     }
 
     if (zipCode !== '' && !isValidZipCode(zipCode)) {
-        alert('Please enter a valid zip code');
+        alert('Please enter a valid 5-digit zip code');
         return false;
     }
 
