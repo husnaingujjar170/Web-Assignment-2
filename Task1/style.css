@@ -82,3 +82,37 @@ width: 15px;
 height: 15px;
 color: rgb(15, 15, 1);
 }
+section {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.first,
+.second {
+    flex: 1;
+    max-width: 360px;
+    margin: 20px;
+}
+#img1,
+#img2 {
+    border: 2px solid black;
+    border-radius: 15px;
+}
+#img1 {
+    margin-right: 20px;
+}
+
+#img2 {
+    margin-left: 20px;
+}
+.images a {
+    margin: 0px 5px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
