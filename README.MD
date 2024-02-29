@@ -41,33 +41,14 @@ This project involves designing separate sign-in and sign-up pages with comprehe
 
 ## Screenshots
 Sign-In Page
-![Sign-In Page](Assignment1_task2/SignIn.png)
+![Sign-In Page](TaskNo2/SignIn.png)
 
 Sign-Up Page
-![Sign-Up Page](Assignment1_task2/SignUp.png)
+![Sign-Up Page](TaskNo2/SignUp.png)
 
 ## Usage
 Open the `index.html` files for the sign-in and sign-up pages in a web browser to view them.
 
-# Task 2: JavaScript form validation
-
-## Description
-Task 2 involves implementing form validation using JavaScript for the sign-in and sign-up forms.
-
-
-## Implementation Details
-Design separate sign-in and sign-up pages. Ensure comprehensive styling for both pages.
-## Testing
-Thoroughly tested the validation process to ensure effectiveness.
-
-## Screenshots
-Sign-In Page
-![Sign-In Page](TaskNo2/signin.png)
-
-Sign-Up Page
-![Sign-Up Page](TaskNo2/signup.png)
-## Usage
-Open the HTML files for the sign-in and sign-up pages in a web browser. Ensure JavaScript is enabled for validation to work properly.
 
 ## Credits
 This project was created by Husnain Mahmood.

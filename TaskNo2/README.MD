@@ -17,5 +17,3 @@ Open the `index.html` files for the sign-in and sign-up pages in a web browser t
 ## Credits
 This project was created by Husnain Mahmood.
 
-## License 
-This project is licensed under the [MIT License](LICENSE).
