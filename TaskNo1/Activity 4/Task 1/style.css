@@ -1,0 +1,93 @@
+body {
+            background-image: url("bg.jpeg");
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+        .type {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .type h1 {
+            color: white;
+            font-style: italic;
+            margin: 0;
+        }
+
+        .type ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .type .hoverable:hover {
+            background-color: #7d0606;
+        }
+        .type ul li {
+            margin-left: 20px;
+            color: white;
+        }
+
+        .dogi {
+            display: inline-block;
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 5px;
+            position: absolute;
+            right: 20px; /* Adjust this value as needed */
+            top: 50%; /* Position the image vertically centered */
+            transform: translateY(-50%);
+            z-index: 1; /* Ensure the image stays above other elements */
+        }
+
+        .hero-section {
+            height: 100vh;
+            background-image: url("images/hero-img.jpg");
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            padding: 0 20px;
+            align-items: center;
+        }
+
+        .hero-section .content {
+            max-width: 1280px;
+            margin: 0 auto 40px;
+            width: 100%;
+        }
+
+        .hero-section .popular-tags {
+            display: flex;
+            color: #fff;
+            gap: 25px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-top: 25px;
+        }
+
+        .hero-section .popular-tags .tags {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            list-style: none;
+        }
+
+        .hero-section .tags li a {
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 4px 12px;
+            border-radius: 50px;
+            transition: 0.2s ease;
+        }
+
+        .hero-section .tags li a:hover {
+            color: #000;
+            background: #fff;
+        }
