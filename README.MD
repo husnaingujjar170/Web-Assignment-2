@@ -17,13 +17,17 @@ This landing page project aims to demonstrate proficiency in HTML and CSS3 by cr
 - The footer contains website information and links to social media platforms.
 
 ## Preview
-
-![Header](header.png)
 *Header section example*
+![Header](header.png)
 
 
-![Footer](footer.png)
+*Hero section example*
+![Hero](hero.png)
+
+
 *Footer section example*
+![Footer](footer.png)
+
 
 ## Usage
 To view the landing page, open the `index.html` file in a web browser.
