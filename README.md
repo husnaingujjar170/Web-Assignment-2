@@ -1,5 +1,30 @@
 # Task 1: Git Hub repo
 
+# Task 2: JavaScript form validation
+## Description
+Task 2 involves implementing form validation using JavaScript for the sign-in and sign-up forms.
+
+
+## Implementation Details
+Identified required fields.
+Validated input format and type.
+Checked input data length.
+Validated numeric input.
+Validated date input.
+Used pattern matching with regular expressions.
+Provided clear error messages.
+
+## Testing
+Thoroughly tested the validation process to ensure effectiveness.
+
+## Screenshots
+Sign-In Page
+![Sign-In Page](TaskNo2/signin.png)
+
+Sign-Up Page
+![Sign-Up Page](TaskNo2/signup.png)
+## Usage
+Open the HTML files for the sign-in and sign-up pages in a web browser. Ensure JavaScript is enabled for validation to work properly.
 
 # Task 3: Bootstrap practice
 # Bootstrap Practice Repository Report
