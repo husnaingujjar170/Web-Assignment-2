@@ -34,7 +34,7 @@ To view the landing page, open the `index.html` file in a web browser.
 
 
 
-# Q.No.2  Sign-in and Sign-up Pages
+# Task 2: Sign-in and Sign-up Pages
 
 ## Description
 This project involves designing separate sign-in and sign-up pages with comprehensive styling using HTML and CSS.
@@ -50,6 +50,7 @@ Sign-Up Page
 Open the `index.html` files for the sign-in and sign-up pages in a web browser to view them.
 
 # Task 2: JavaScript form validation
+
 ## Description
 Task 2 involves implementing form validation using JavaScript for the sign-in and sign-up forms.
 
@@ -61,12 +62,12 @@ Thoroughly tested the validation process to ensure effectiveness.
 
 ## Screenshots
 Sign-In Page
-![Sign-In Page](Assignment2_task2/signin.png)
+![Sign-In Page](TaskNo2/signin.png)
 
 Sign-Up Page
-![Sign-Up Page](Assignment2_task2/signup.png)
+![Sign-Up Page](TaskNo2/signup.png)
 ## Usage
 Open the HTML files for the sign-in and sign-up pages in a web browser. Ensure JavaScript is enabled for validation to work properly.
 
 ## Credits
-This project was created by Husdnain Mahmood.
+This project was created by Husnain Mahmood.
