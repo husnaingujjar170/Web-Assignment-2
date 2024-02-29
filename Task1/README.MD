@@ -21,6 +21,10 @@ This landing page project aims to demonstrate proficiency in HTML and CSS3 by cr
 ![Header](header.png)
 
 
+*Hero section example*
+![Hero](hero.png)
+
+
 *Footer section example*
 ![Footer](footer.png)
 
