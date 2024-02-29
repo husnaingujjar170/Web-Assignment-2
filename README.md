@@ -19,10 +19,10 @@ Thoroughly tested the validation process to ensure effectiveness.
 
 ## Screenshots
 Sign-In Page
-![Sign-In Page](TaskNo2/signin.png)
+![Sign-In Page](TaskNo2/SignIn.png)
 
 Sign-Up Page
-![Sign-Up Page](TaskNo2/signup.png)
+![Sign-Up Page](TaskNo2/SignUp.png)
 ## Usage
 Open the HTML files for the sign-in and sign-up pages in a web browser. Ensure JavaScript is enabled for validation to work properly.
 
