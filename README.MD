@@ -18,15 +18,15 @@ This landing page project aims to demonstrate proficiency in HTML and CSS3 by cr
 
 ## Preview
 *Header section example*
-![Header](header.png)
+![Header](TaskNo1/header.png)
 
 
 *Hero section example*
-![Hero](hero.png)
+![Hero](TaskNo1/hero.png)
 
 
 *Footer section example*
-![Footer](footer.png)
+![Footer](TaskNo1/footer.png)
 
 
 ## Usage
