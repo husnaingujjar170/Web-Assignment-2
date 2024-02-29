@@ -39,10 +39,10 @@ body {
             border-radius: 10px;
             padding: 5px;
             position: absolute;
-            right: 20px; /* Adjust this value as needed */
-            top: 50%; /* Position the image vertically centered */
+            right: 20px; 
+            top: 50%; 
             transform: translateY(-50%);
-            z-index: 1; /* Ensure the image stays above other elements */
+            z-index: 1; 
         }
 
         .hero-section {
