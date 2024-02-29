@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="Signup1.css">
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (username.trim() === "") {
+                alert("Please enter your username.");
+                return false;
+            }
+
+            if (password.trim() === "") {
+                alert("Please enter your password.");
+                return false;
+            }
+
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters long.");
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert("Password and confirm password do not match.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>SIGN UP</h1>
+            <form action="Signup2.html" onsubmit="return validateForm()">
+                <input class="input" type="text" id="username" placeholder="Type Your Username">
+                <input class="input" type="password" id="password" placeholder="Type Your Password">
+                <input class="input" type="password" id="confirmPassword" placeholder="Confirm Password">
+                <a href="Signup2.html"><input id="login" type="submit" value="Next Page >"><br></a>
+                <label>Already have an account ? <a href="Login.html">Login</a></label>
+                <span>Or Sign Up using</span>
+                <div class="images">
+                    <a id="Sign" href="#">
+                        <img src="Fb.png" alt="Image Loading Error">
+                        <img src="Insta.png" alt="Image Loading Error">
+                        <img src="twitter.png" alt="Image Loading Error">
+                    </a>
+                </div>
+            </form>
+            <div id="page">
+                <label>Page 1 of 2</label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

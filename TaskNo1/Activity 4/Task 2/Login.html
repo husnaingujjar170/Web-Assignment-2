@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css">
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username.trim() === "") {
+                alert("Please enter your username.");
+                return false;
+            }
+
+            if (password.trim() === "") {
+                alert("Please enter your password.");
+                return false;
+            }
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters long.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>LOGIN</h1>
+            <form action="Default.php" onsubmit="return validateForm()">
+                <input class="input" type="text" id="username" placeholder="Type Your Username">
+                <input class="input" type="password" id="password" placeholder="Type Your Password">
+                <a id="pass" href="#">Forgot Password?</a>
+                <input id="login" type="submit" value="LOGIN"><br>
+                <label>Don't have an account ? <a href="Signup1.html">Sign Up</a></label>
+                <span>Or Sign Up using</span>
+                <div class="images">
+                    <a id="Sign" href="#">
+                        <img src="Fb.png" alt="Image Loading Error">
+                        <img src="Insta.png" alt="Image Loading Error">
+                        <img src="twitter.png" alt="Image Loading Error">
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
