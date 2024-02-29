@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="Signup2.css">
+    <script>
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var birthday = document.getElementById("birthday").value;
+            var gender = document.getElementById("gender").value;
+            var phone = document.getElementById("phone").value;
+            var country = document.getElementById("country").value;
+            var zipCode = document.getElementById("zipCode").value;
+
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+
+            var birthdayPattern = /^\d{4}-\d{2}-\d{2}$/;
+            var parts = birthday.split("-");
+            var birthdayDate = new Date(parts[0], parts[1] - 1, parts[2]);
+            var today = new Date();
+            var age = today.getFullYear() - birthdayDate.getFullYear();
+            var monthDiff = today.getMonth() - birthdayDate.getMonth();
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthdayDate.getDate())) {
+                age--;
+            }
+            if (!birthdayPattern.test(birthday)) {
+                alert("Please enter a valid birthday (YYYY-MM-DD)");
+                return false;
+            }
+            if (age < 18) {
+                alert("You must be at least 18 years old to sign up.");
+                return false;
+            }
+
+            if (gender === "") {
+                alert("Please select a gender");
+                return false;
+            }
+
+            var phonePattern = /^\d{3}-\d{7}$/;
+            if (!phonePattern.test(phone)) {
+                alert("Please enter a valid phone number (XXX-XXXXXXX)");
+                return false;
+            }
+
+            if (country.trim() === "") {
+                alert("Please enter your country");
+                return false;
+            }
+
+            if (isNaN(zipCode) || zipCode.trim() === "") {
+                alert("Please enter a valid zip code");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>SIGN UP</h1>
+            <form action="Default.php" onsubmit="return validateForm()">
+                <input class="input" type="email" id="email" placeholder="Type Your email" required>
+                <input class="input" type="text" id="birthday" placeholder="Birthday(DD-MM-YYYY)"
+                    onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                <select name="gender" id="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input class="input" type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                <input class="input" type="text" id="country" placeholder="Type Your Country" required>
+                <input class="input" type="text" id="zipCode" placeholder="Type Your Zip Code" required>
+                <input id="login" type="submit" value="SIGN UP">
+                <label>Already have an account ? <a href="Login.html">Login</a></label>
+                <span>Or Sign Up using</span>
+                <div class="images">
+                    <a id="Sign" href="#">
+                        <img src="Fb.png" alt="Image Loading Error">
+                        <img src="Insta.png" alt="Image Loading Error">
+                        <img src="twitter.png" alt="Image Loading Error">
+                    </a>
+                </div>
+            </form>
+            <div id="page">
+                <label>Page 2 of 2</label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

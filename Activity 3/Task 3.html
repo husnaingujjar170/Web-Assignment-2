@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+
+<body>
+    <form id="calculatorForm">
+        <input type="number" id="num1" placeholder="Enter first number"><br>
+        <input type="number" id="num2" placeholder="Enter second number"><br>
+        <button type="button" onclick="calculate()">Calculate</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script>
+        function calculate() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var addition = num1 + num2;
+            var subtraction = num1 - num2;
+            var multiplication = num1 * num2;
+            var division = num1 / num2;
+
+            document.getElementById('results').innerHTML = `
+        <h3>Results:</h3>
+        <p>Addition: ${addition}</p>
+        <p>Subtraction: ${subtraction}</p>
+        <p>Multiplication: ${multiplication}</p>
+        <p>Division: ${division}</p>
+      `;
+        }
+    </script>
+</body>
+
+</html>
