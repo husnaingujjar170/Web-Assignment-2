@@ -94,7 +94,19 @@ section {
     flex: 1;
     max-width: 360px;
     margin: 20px;
+    animation: slideInFromLeft 2s forwards;
+    transform: translateX(-100%); 
 }
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 #img1,
 #img2 {
     border: 2px solid black;
@@ -103,7 +115,15 @@ section {
 #img1 {
     margin-right: 20px;
 }
+@keyframes animation1 {
+    from{
+    left:0
 
+    }
+    to {
+      left:20%  
+    }
+}
 #img2 {
     margin-left: 20px;
 }
