@@ -30,34 +30,32 @@ This task involves uploading an image in an HTML webpage and creating a button u
 Here, we write a jQuery program to dynamically remove any row from an HTML table. Screenshots illustrate the successful execution of the program.
 
 ### Screenshot:
-![Task 4](path/to/task4_screenshot.png)
+![Task 4](Pics/Tb.png)
 
 ## Lab Task 5: Find Class and ID of Clicked Element
 
 The goal of this task is to create a jQuery program that identifies and displays the class and ID of a clicked HTML element. The provided HTML page assigns both classes and IDs to elements for demonstration purposes.
 
 ### Screenshot:
-![Task 5](path/to/task5_screenshot.png)
+![Task 5](Pics/ClassIdFinder.png)
 
 ## Lab Task 6: Calculate Total Width of an Element
 
 This lab utilizes jQuery to calculate the total width of an HTML element, including its width, padding, and border. Screenshots provide a visual representation of the successful execution.
 
 ### Screenshot:
-![Task 6](path/to/task6_screenshot.png)
+![Task 6](Pics/Width%20Calculator.png)
 
 ## Lab Task 7: Counting 'p' Elements with jQuery
 
 This task involves writing a jQuery program to count the number of 'p' elements within an HTML container. Screenshots illustrate the output for the provided HTML code.
 
 ### Screenshot:
-![Task 7](path/to/task7_screenshot.png)
+![Task 7](Pics/PCalculator.png)
 
 ## Lab Task 8: Div Animation Using jQuery
 
 The final task demonstrates animating a 'div' element from left to right over an 8-second duration using jQuery's `animate` property. Screenshots showcase the animation effect.
 
 ### Screenshot:
-![Task 8](path/to/task8_screenshot.png)
-
-Replace the placeholder text within the square brackets with the actual file paths of your images. This structure allows you to provide visual reference points for each task in your README.
+![Task 8](Pics/Animation.png)
