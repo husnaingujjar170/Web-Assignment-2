@@ -22,7 +22,8 @@ This task demonstrates displaying an alert message, "Welcome to jQuery," using b
 This task involves uploading an image in an HTML webpage and creating a button using jQuery to toggle the image display between show and hide. The button text and image visibility are synchronized.
 
 ### Screenshot:
-![Task 3](path/to/task3_screenshot.png)
+![Task 3](Pics/show.png)
+![Task 3](Pics/Hide..png)
 
 ## Lab Task 4: Remove Table Row with jQuery
 
