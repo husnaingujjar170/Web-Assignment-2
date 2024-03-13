@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Div Animation using jQuery</title>
+    <style>
+        #animatedDiv {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="animatedDiv"></div>
+
+    <script>
+        $(document).ready(function() {
+            var duration = 8000; 
+            var distance = $(window).width() - $('#animatedDiv').width(); 
+
+            $('#animatedDiv').animate({
+                left: distance
+            }, duration);
+        });
+    </script>
+</body>
+</html>
