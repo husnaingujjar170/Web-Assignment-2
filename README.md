@@ -1,108 +1,62 @@
-# Web-Assignment-2
-I am doing a web assignment in which i have assigned to do all my assignment on Git Hub.
+Certainly! Here's an extended example template for tasks 3 to 8, including placeholders for images:
 
-# Task 1: Git Hub repo
-## Q.No.1 Landing Page
+# Lab Tasks README
 
-## Description
-This landing page project aims to demonstrate proficiency in HTML and CSS3 by creating a simple yet visually appealing webpage. It consists of several sections, including a navbar, hero section, and footer.
+## Lab Task 1: Commenting in HTML, CSS, and JavaScript
 
-## Sections
-
-### Navbar
-- The navbar contains a logo and links to all pages.
-- CSS Pseudo-classes are applied for hover, visited, and active links to enhance user experience.
-
-### Hero Section
-- The hero section incorporates a picture and text.
-- Flex property is utilized for layout, allowing for flexible and responsive design.
-
-### Footer
-- The footer contains website information and links to social media platforms.
-
-## Preview
-
-*Header section example*
-![Header](Assignment1_task1/header.png)
+In this lab task, we explore the methods of using comments in HTML, CSS, and JavaScript to enhance code readability and provide explanations. The examples illustrate how comments can be inserted in each language.
 
 
-*Footer section example*
-![Footer](Assignment1_task1/footer.png)
+## Lab Task 2: Alert Message Using jQuery
 
+This task demonstrates displaying an alert message, "Welcome to jQuery," using both the jQuery download method and the CDN (Content Delivery Network) method. Examples showcase the inclusion of jQuery in HTML and triggering an alert upon document readiness.
 
-## Usage
-To view the landing page, open the `index.html` file in a web browser.
+### Screenshot:
+## Jquery.alert()
+![Task 2](Pics/Jquery.png)
 
+## CDN.alert()
+![Task 2](Pics/CDN.png)
+## Lab Task 3: Upload Image and Toggle Display
 
+This task involves uploading an image in an HTML webpage and creating a button using jQuery to toggle the image display between show and hide. The button text and image visibility are synchronized.
 
-# Q.No.2  Sign-in and Sign-up Pages
+### Screenshot:
+![Task 3](path/to/task3_screenshot.png)
 
-## Description
-This project involves designing separate sign-in and sign-up pages with comprehensive styling using HTML and CSS.
+## Lab Task 4: Remove Table Row with jQuery
 
-## Screenshots
-Sign-In Page
-![Sign-In Page](Assignment1_task2/SignIn.png)
+Here, we write a jQuery program to dynamically remove any row from an HTML table. Screenshots illustrate the successful execution of the program.
 
-Sign-Up Page
-![Sign-Up Page](Assignment1_task2/SignUp.png)
+### Screenshot:
+![Task 4](path/to/task4_screenshot.png)
 
-## Usage
-Open the `index.html` files for the sign-in and sign-up pages in a web browser to view them.
+## Lab Task 5: Find Class and ID of Clicked Element
 
-# Task 2: JavaScript form validation
-## Description
-Task 2 involves implementing form validation using JavaScript for the sign-in and sign-up forms.
+The goal of this task is to create a jQuery program that identifies and displays the class and ID of a clicked HTML element. The provided HTML page assigns both classes and IDs to elements for demonstration purposes.
 
+### Screenshot:
+![Task 5](path/to/task5_screenshot.png)
 
-## Implementation Details
-Identified required fields.
-Validated input format and type.
-Checked input data length.
-Validated numeric input.
-Validated date input.
-Used pattern matching with regular expressions.
-Provided clear error messages.
+## Lab Task 6: Calculate Total Width of an Element
 
-## Testing
-Thoroughly tested the validation process to ensure effectiveness.
+This lab utilizes jQuery to calculate the total width of an HTML element, including its width, padding, and border. Screenshots provide a visual representation of the successful execution.
 
-## Screenshots
-Sign-In Page
-![Sign-In Page](Assignment2_task2/signin.png)
+### Screenshot:
+![Task 6](path/to/task6_screenshot.png)
 
-Sign-Up Page
-![Sign-Up Page](Assignment2_task2/signup.png)
-## Usage
-Open the HTML files for the sign-in and sign-up pages in a web browser. Ensure JavaScript is enabled for validation to work properly.
+## Lab Task 7: Counting 'p' Elements with jQuery
 
+This task involves writing a jQuery program to count the number of 'p' elements within an HTML container. Screenshots illustrate the output for the provided HTML code.
 
+### Screenshot:
+![Task 7](path/to/task7_screenshot.png)
 
+## Lab Task 8: Div Animation Using jQuery
 
-# Task 3: Bootstrap practice
-# Bootstrap Practice Repository Report
+The final task demonstrates animating a 'div' element from left to right over an 8-second duration using jQuery's `animate` property. Screenshots showcase the animation effect.
 
-## Overview
-This repository contains a practice exercise demonstrating the implementation of Bootstrap in a basic HTML document. Bootstrap, a popular CSS framework, was utilized to enhance the layout and styling of the webpage.
+### Screenshot:
+![Task 8](path/to/task8_screenshot.png)
 
-## Changes Made
-- Integrated Bootstrap CSS and JavaScript files from CDN for styling and functionality.
-- Styled the header section using `.container-fluid`, `.bg-primary`, `.text-white`, and `.text-center` classes.
-- Utilized Bootstrap's grid system with `.row` and `.col-sm-4` classes to organize content into responsive columns.
-- Incorporated placeholder images with Bootstrap's responsive image class.
-- Styled call-to-action buttons using Bootstrap button classes.
-
-## Screenshots
-BootStrap Practice 
-![BootStrap Practice](Assignment2_task3/Bootstrap.png)
-![BootStrap Practice](Assignment2_task3/Bootstrap_Remaining.png)
-## Usage
-To view the practice webpage, simply open the HTML file in a web browser.
-
-
-## Credits
-This project was implemented by Husnain Mahmood.
-
-
-## Conclusion
-This practice exercise demonstrates the effectiveness of Bootstrap in improving the visual appeal and responsiveness of web pages. By leveraging Bootstrap's pre-built components and grid system, developers can create professional-looking websites with ease. Further exploration of Bootstrap's features can lead to even more sophisticated web designs.
+Replace the placeholder text within the square brackets with the actual file paths of your images. This structure allows you to provide visual reference points for each task in your README.
