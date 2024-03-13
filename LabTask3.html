@@ -3,13 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Toggle Image Display</title>
+    <!-- JS Query Src!!-->
     <script src="JS/jquery-3.7.1.min.js"></script>
+    <style>
+        #uploadedImage {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    this is my body
-    <script>
-        console.log($)
-    </script>
+<input type="file" id="imageInput" accept="image/*">
+<button id="toggleButton">Show Image</button>
+<img id="uploadedImage" src="#" alt="Uploaded Image">
+<script>
+    $(document).ready(function() {
+        $("#toggleButton").click(function() {
+            $("#uploadedImage").toggle();
+            
+            if ($("#uploadedImage").is(":visible")) {
+                $("#toggleButton").text("Hide Image");
+            } else {
+                $("#toggleButton").text("Show Image");
+            }
+        });
+
+        $("#imageInput").change(function() {
+            readURL(this);
+        });
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                
+                reader.onload = function(e) {
+                    $("#uploadedImage").attr("src", e.target.result);
+                };
+                
+                reader.readAsDataURL(input.files[0]);
+                
+                $("#uploadedImage").show();
+                $("#toggleButton").text("Hide Image");
+            }
+        }
+    });
+</script>
+
 </body>
 </html>
