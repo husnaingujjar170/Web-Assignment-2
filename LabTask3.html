@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Image Display</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI/tZ1XWIljLMpKDBX594/D9vqU5nTHFAH9q3e9A=" crossorigin="anonymous"></script>
+    <style>
+        #uploadedImage {
+            display: none;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<input type="file" id="imageInput" accept="image/*">
+<button id="toggleButton">Show Image</button>
+<img id="uploadedImage" src="#" alt="Uploaded Image">
+
+<script>
+    $(document).ready(function() {
+        // Image toggle functionality
+        $("#toggleButton").click(function() {
+            $("#uploadedImage").toggle();
+            var buttonText = $("#toggleButton").text();
+            
+            // Toggle button text
+            if (buttonText === "Show Image") {
+                $("#toggleButton").text("Hide Image");
+            } else {
+                $("#toggleButton").text("Show Image");
+            }
+        });
+
+        // Image preview when a file is selected
+        $("#imageInput").change(function() {
+            readURL(this);
+        });
+
+        // Function to read the selected file and display it as an image
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                
+                reader.onload = function(e) {
+                    $("#uploadedImage").attr("src", e.target.result);
+                };
+                
+                reader.readAsDataURL(input.files[0]);
+                
+                // Show the image and update button text when an image is uploaded
+                $("#uploadedImage").show();
+                $("#toggleButton").text("Hide Image");
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
