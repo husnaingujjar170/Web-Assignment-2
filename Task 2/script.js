@@ -7,6 +7,7 @@ for (var i = 0; i < numberOfDivs; i++) {
     newDiv.innerHTML = document.getElementById('day1').innerHTML;
     container.appendChild(newDiv);
 }
+
 function fetchData() {
     let cityName = $("#cityInput").val();
     let apiKey = "19b9f702004024fc3c8f76b4067e9ede";
@@ -63,6 +64,7 @@ function fetchData() {
             alert(error.message);
         });
 }
+
 function back() {
     $(".one").css("display", "none");
     $(".two").css("display", "none");
