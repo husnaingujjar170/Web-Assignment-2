@@ -1,0 +1,191 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    width: 50%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+h1,
+input,
+button {
+    font-family: Comic Sans Ms;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    width: 40%;
+    font-size: 16px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    margin: 10px 0;
+    width: 40%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.one {
+    width: 200px;
+    margin-left: 10px;
+    display: none;
+}
+
+.temperature {
+    display: flex;
+    justify-content: space-between;
+}
+
+.min-max {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.line {
+    width: 2px;
+    height: 10px;
+    background-color: black;
+}
+
+.min-max p {
+    margin: 0;
+}
+
+section .two {
+    display: flex;
+    display: none;
+    width: 100%;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
+    scale: 1.05;
+}
+
+.card h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.text {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    margin-top: 19px;
+}
+
+td {
+    display: inline-flex;
+    width: 50%;
+    height: 40px;
+    justify-content: center;
+    border-top: 1px solid #ccc;
+}
+
+.fa-droplet,
+.fa-temperature-low {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .cont input,
+    .cont button {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container h1 {
+        font-size: 26px;
+    }
+
+    .cont input,
+    .cont button {
+        width: 80%;
+    }
+
+    .container {
+        height: 50%;
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+
+    .cont input,
+    .cont button {
+        width: 100%;
+    }
+
+    .cont input {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        height: 50%;
+        width: 100%;
+    }
+}
