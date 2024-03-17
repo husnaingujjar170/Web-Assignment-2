@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #000000 50%, #2e0d60 100%);
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 300px;
+            height: 400px;
+            background-color: #9a99af;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            animation: appear 0.5s ease-in-out;
+            margin: 20px;
+            animation-fill-mode: forwards;
+
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .back-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            padding: 15px 25px;
+            background-color: #2e0d60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #501992;
+        }
+
+        .fade-out {
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        form {
+            margin: 20px;
+            animation-fill-mode: forwards;
+        }
+
+        #aboutform {
+            animation: slideInFromLeft 1s ease-in-out;
+        }
+
+        #projectsfrom {
+            animation: slideInFromRight 1s ease-in-out;
+        }
+
+        #contactform {
+            animation: slideInFromTop 1s ease-in-out;
+        }
+
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromRight {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <form id="aboutform">
+            <h2>About</h2>
+            <p>I'm Husnain Mahmood, a highly motivated individual seeking opportunities in the database field. With a
+                strong foundation in database concepts and demonstrated academic success (910/1100 in matric, 922/1100
+                in intermediate), I'm eager to apply my skills and knowledge. My current role as a Teaching Assistant
+                further solidifies my commitment to learning and development.</p>
+        </form>
+
+        <form id="projectsform">
+            <h2>Projects</h2>
+            <p>Description: Developed a word puzzle game using Prefix Trees (PF) to efficiently store and search a large
+                dictionary. Implemented user-friendly gameplay with features like word scoring, hints, and a dynamic
+                interface.
+                Technologies: C++, Object-Oriented Programming (OOP), Prefix Tree Data Structure
+                Key Skills: Data structure design, OOP principles, algorithm implementation, UI/UX considerations</p>
+        </form>
+
+        <form id="contactform">
+            <h2>Contact</h2>
+            <p>f219624@cfd.nu.edu.pk</p>
+        </form>
+        <button class="back-button">Back</button>
+    </div>
+
+
+    <script>
+        const button = document.querySelector('.back-button');
+
+        button.addEventListener('click', function () {
+            document.body.classList.add('fade-out');
+            setTimeout(function () {
+                window.history.back(); // Go back in browser history
+            }, 1000);
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Husnain Gujjar</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: linear-gradient(to right bottom, #000000 50%, #2e0d60 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .image-container {
+            width: 500px;
+            height: 375px;
+            border-radius: 10px;
+            box-shadow: none;
+            position: absolute;
+            top: 98px;
+            right: 200px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            filter: grayscale(100%);
+        }
+
+        .next-page-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            padding: 15px 25px;
+            background-color: #2e0d60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .next-page-button:hover {
+            background-color: #501992;
+        }
+
+        .fade-out {
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+
+        @font-face {
+            font-family: 'Blackout';
+            src: url('blackout.ttf') format('truetype');
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink-caret {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        .typing-text {
+            color: white;
+            font-size: 10em;
+            font-family: 'Blackout', sans-serif;
+            overflow: hidden;
+            border-right: .15em transparent solid;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            width: auto;
+            max-width: 800px;
+            animation:
+                typing 5.5s steps(40, end) forwards,
+                blink-caret .75s step-end infinite;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="typing-text" style="display: inline-block;">Husnain Mahmod</div>
+
+    <div class="image-container">
+        <img src="Clipped_image_20240222_195600.png" alt="Your Image Description">
+    </div>
+
+    <button class="next-page-button">Next Page</button>
+
+    <script>
+        const button = document.querySelector('.next-page-button');
+
+        button.addEventListener('click', function () {
+            document.body.classList.add('fade-out');
+            setTimeout(function () {
+                window.location.href = 'next_page.html';
+            }, 1000);
+        });
+        const typingText = document.querySelector('.typing-text');
+        const textToType = typingText.textContent;
+        let index = 0;
+
+        function typeEffect() {
+            typingText.textContent = textToType.slice(0, index);
+            index++;
+
+            if (index > textToType.length) {
+                index = 0;
+            } else {
+                setTimeout(typeEffect, 100);
+            }
+        }
+
+        typeEffect();
+
+
+
+    </script>
+</body>
+
+</html>
