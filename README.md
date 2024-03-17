@@ -10,7 +10,7 @@ This repository contains the completion of various tasks as part of a portfolio 
 - Structured the portfolio for easy presentation to potential employers.
 - Utilized technologies such as HTML, CSS, and JavaScript.
 - Hosted the portfolio on GitHub Pages.
-- Live link to the portfolio: [Portfolio Link](#) <!-- Add your live portfolio link here -->
+- Live link to the portfolio: [Portfolio Link](https://husnaingujjar170.github.io/Web-Assignment-2/) 
 
 ![Portfolio Screenshot](Task1/port.png)
 ![Portfolio Screenshot](Task1/next_port.png)
