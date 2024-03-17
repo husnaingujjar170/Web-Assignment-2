@@ -55,7 +55,7 @@ $(document).ready(function() {
         if (!continueGame) {
             userScore = 0;
             computerScore = 0;
-            $('#result-text').text(''); // Clear the result text
+            $('#result-text').text(''); 
             $('#user-score').text(`User: ${userScore}`);
             $('#computer-score').text(`Computer: ${computerScore}`);
             continueGame = true;
