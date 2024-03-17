@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="Clock.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="outer">
+            <h1>THIS IS THE CURRENT TIME</h1>
+            <div class="digital">
+                <div class="con">
+                    <div style="background-color: #007fa0;" class="sec sec1">
+                        HOURS
+                    </div>
+                    <div id="hour" style="background-color: #00a1cd;" class="time sec1">
+                        00
+                    </div>
+                </div>
+                <div class="con">
+                    <div style="background-color: #6ca206;" class="sec sec2">
+                        MINUTES
+                    </div>
+                    <div id="minute" style="background-color: #8ad207;" class="time sec2">
+                        00
+                    </div>
+                </div>
+                <div class="con">
+                    <div style="background-color: #cf5000;" class="sec sec3">
+                        SECONDS
+                    </div>
+                    <div id="second" style="background-color: #ff6801;" class="time sec3">
+                        00
+                    </div>
+                </div>
+                <div class="con">
+                    <div style="background-color: #1e9069;" class="sec sec4">
+                        PERIOD
+                    </div>
+                    <div id="period" style="background-color: #1cbf88;" class="time sec4">
+                        AM
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        function updateClock() {
+            let now = new Date();
+            let seconds = now.getSeconds();
+            let minutes = now.getMinutes();
+            let hours = now.getHours();
+            $("#hour").text(hours);
+            $("#minute").text(minutes);
+            $("#second").text(seconds);
+            let period;
+            if (hours >= 12) {
+                period = "PM";
+            } else {
+                period = "AM";
+            }
+            $("#period").text(period);
+        }
+        setInterval(updateClock, 1000);
+
+        updateClock();
+    </script>
+</body>
+
+</html>
