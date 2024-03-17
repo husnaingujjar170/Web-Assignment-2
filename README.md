@@ -28,20 +28,17 @@ This repository contains the completion of various tasks as part of a portfolio 
 - Included real-time functionality for hours, minutes, and seconds.
 - Styled the clock for a modern look using CSS3.
 
-![Digital Clock Screenshot](screenshots/screenshot3.png)
+![Digital Clock Screenshot](Task3/clock.png)
 
 ## Task 4: Rock Paper Scissor Game (20 Marks)
 - Created a Rock, Paper, Scissors game using HTML, CSS, JavaScript, and jQuery.
 - Supported single-player mode against the computer.
 - Validated user choices and included a scoring mechanism.
 
-![Rock Paper Scissor Game Screenshot](screenshots/screenshot4.png)
+![Rock Paper Scissor Game Screenshot](Task4/guess_game.png)
 
 Feel free to explore each task for more details. Your feedback is appreciated!
 
 ## Credits
 This assignment was implemented by Husnain Mahmood.
 
-
-## Conclusion
-This practice exercise demonstrates the effectiveness of Bootstrap in improving the visual appeal and responsiveness of web pages. By leveraging Bootstrap's pre-built components and grid system, developers can create professional-looking websites with ease. Further exploration of Bootstrap's features can lead to even more sophisticated web designs.
