@@ -6,6 +6,11 @@ $(document).ready(function() {
         const choices = ['rock', 'paper', 'scissors'];
         const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
+        if (!choices.includes(userChoice)) {
+            alert("Invalid choice. Please choose rock, paper, or scissors.");
+            return;
+        }
+
         let result;
         if (userChoice === computerChoice) {
             result = 'Tie!';
@@ -37,4 +42,19 @@ $(document).ready(function() {
 
         $('#result-text').text(result);
         $('#user-score').text(`User: ${userScore}`);
-        $('#computer-score
+        $('#computer-score').text(`Computer: ${computerScore}`);
+    }
+
+    $('#rock').click(function() {
+        playGame('rock');
+    });
+
+    $('#paper').click(function() {
+        playGame('paper');
+    });
+
+    $('#scissors').click(function() {
+        playGame('scissors');
+    });
+});
+
