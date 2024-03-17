@@ -24,28 +24,10 @@ body {
     text-align: center;
 }
 
-button {
+img {
     margin: 10px;
-    padding: 10px 20px;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-}
-
-#rock {
-    background-color: #c0392b;
-    color: #fff;
-}
-
-#paper {
-    background-color: #ffd700;
-    color: #000;
-}
-
-#scissors {
-    background-color: #7ec0ee;
-    color: #fff;
 }
 
 #result-text {

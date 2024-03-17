@@ -1,8 +1,11 @@
 $(document).ready(function() {
     let userScore = 0;
     let computerScore = 0;
+    let continueGame = true;
 
     function playGame(userChoice) {
+        if (!continueGame) return;
+
         const choices = ['rock', 'paper', 'scissors'];
         const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
@@ -14,35 +17,25 @@ $(document).ready(function() {
         let result;
         if (userChoice === computerChoice) {
             result = 'Tie!';
-        } else if (userChoice === 'rock') {
-            if (computerChoice === 'scissors') {
-                result = 'You Win!';
-                userScore++;
-            } else {
-                result = 'You Lose!';
-                computerScore++;
-            }
-        } else if (userChoice === 'paper') {
-            if (computerChoice === 'rock') {
-                result = 'You Win!';
-                userScore++;
-            } else {
-                result = 'You Lose!';
-                computerScore++;
-            }
-        } else if (userChoice === 'scissors') {
-            if (computerChoice === 'paper') {
-                result = 'You Win!';
-                userScore++;
-            } else {
-                result = 'You Lose!';
-                computerScore++;
-            }
+        } else if ((userChoice === 'rock' && computerChoice === 'scissors') ||
+                   (userChoice === 'paper' && computerChoice === 'rock') ||
+                   (userChoice === 'scissors' && computerChoice === 'paper')) {
+            result = 'You Win!';
+            userScore++;
+        } else {
+            result = 'You Lose!';
+            computerScore++;
         }
 
         $('#result-text').text(result);
         $('#user-score').text(`User: ${userScore}`);
         $('#computer-score').text(`Computer: ${computerScore}`);
+
+        if (userScore >= 5 || computerScore >= 5) {
+            continueGame = false;
+            $('#continue-msg').show();
+            $('#continue-msg').html('Do you want to continue? <button id="yes">Yes</button><button id="no">No</button>');
+        }
     }
 
     $('#rock').click(function() {
@@ -56,5 +49,19 @@ $(document).ready(function() {
     $('#scissors').click(function() {
         playGame('scissors');
     });
-});
 
+    $(document).on('click', '#yes', function() {
+        $('#continue-msg').hide();
+        if (!continueGame) {
+            userScore = 0;
+            computerScore = 0;
+            $('#user-score').text(`User: ${userScore}`);
+            $('#computer-score').text(`Computer: ${computerScore}`);
+            continueGame = true;
+        }
+    });
+
+    $(document).on('click', '#no', function() {
+        $(document).hide();
+    });
+});
