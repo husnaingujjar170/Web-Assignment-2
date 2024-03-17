@@ -58,6 +58,25 @@ button {
     border-radius: 5px;
     text-align: center;
 }
+table {
+    width: 100%;
+    margin-top: 19px;
+}
+
+td {
+    display: inline-flex;
+    width: 50%;
+    height: 40px;
+    justify-content: center;
+    border-top: 1px solid #ccc;
+}
+
+.fa-droplet,
+.fa-temperature-low {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 button:hover {
     cursor: pointer;
@@ -121,26 +140,6 @@ section .two {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-table {
-    width: 100%;
-    margin-top: 19px;
-}
-
-td {
-    display: inline-flex;
-    width: 50%;
-    height: 40px;
-    justify-content: center;
-    border-top: 1px solid #ccc;
-}
-
-.fa-droplet,
-.fa-temperature-low {
-    display: flex;
     justify-content: center;
     align-items: center;
 }
