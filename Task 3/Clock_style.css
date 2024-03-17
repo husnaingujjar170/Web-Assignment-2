@@ -10,7 +10,43 @@ body {
     justify-content: center;
     align-items: center;
 }
+@keyframes animate {
+    0% {
+        color: transparent;
+    }
 
+    100% {
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .outer {
+        width: 100%;
+    }
+
+    .outer h1 {
+        font-size: 26px;
+    }
+
+    .digital .con {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .sec {
+        font-size: 10px;
+    }
+
+    .time {
+        font-size: 40px;
+    }
+
+    .outer h1 {
+        font-size: 16px;
+    }
+}
 .outer {
     display: flex;
     flex-direction: column;
@@ -19,28 +55,6 @@ body {
     height: 300px;
     width: 600px;
     overflow: hidden;
-}
-
-.outer h1 {
-    font-family: Comic Sans Ms;
-    margin: 0;
-    margin-top: 30px;
-}
-
-.digital {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 200px;
-    width: 100%;
-}
-
-.digital .con {
-    height: 65%;
-    width: 20%;
-    -webkit-box-reflect: below 0 linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2));
-    ;
 }
 
 .sec,
@@ -89,40 +103,25 @@ body {
     animation-delay: 3s;
 }
 
-@keyframes animate {
-    0% {
-        color: transparent;
-    }
-
-    100% {
-        color: white;
-    }
+.outer h1 {
+    font-family: Comic Sans Ms;
+    margin: 0;
+    margin-top: 30px;
 }
 
-@media only screen and (max-width: 610px) {
-    .outer {
-        width: 100%;
-    }
-
-    .outer h1 {
-        font-size: 26px;
-    }
-
-    .digital .con {
-        width: 25%;
-    }
+.digital {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 200px;
+    width: 100%;
 }
 
-@media only screen and (max-width:420px) {
-    .sec {
-        font-size: 10px;
-    }
-
-    .time {
-        font-size: 40px;
-    }
-
-    .outer h1 {
-        font-size: 16px;
-    }
+.digital .con {
+    height: 65%;
+    width: 20%;
+    -webkit-box-reflect: below 0 linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2));
+    ;
 }
+
