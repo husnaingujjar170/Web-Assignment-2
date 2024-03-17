@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
     <div class="container">
         <div class="user-choice-container">
             <h2>Choose</h2>
-            <img id="rock" src="rock.png" height="65px" width="45px" alt="Rock">
-            <img id="paper" src="paper.png" height="65px" width="45px" alt="Paper">
-            <img id="scissors" src="scissors.png" height="65px" width="45px" alt="Scissors">
+            <div class="image-row">
+                <div class="image-container">
+                    <img id="rock" src="red_rock.png" height="65px" width="45px" alt="Rock">
+                    <p class="image-text">Rock</p>
+                </div>
+                <div class="image-container">
+                    <img id="paper" src="blue_paper.png" height="65px" width="45px" alt="Paper">
+                    <p class="image-text">Paper</p>
+                </div>
+                <div class="image-container">
+                    <img id="scissors" src="green_scissors.png" height="65px" width="45px" alt="Scissors">
+                    <p class="image-text">Scissors</p>
+                </div>
+            </div>
         </div>
         <div class="result-container">
             <h2>Result</h2>
@@ -23,7 +36,5 @@
             <p id="continue-msg" style="display: none;">Do you want to continue?</p>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>

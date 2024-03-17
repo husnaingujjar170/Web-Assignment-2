@@ -16,14 +16,14 @@ $(document).ready(function() {
 
         let result;
         if (userChoice === computerChoice) {
-            result = 'Tie!';
+            result = 'Tied';
         } else if ((userChoice === 'rock' && computerChoice === 'scissors') ||
                    (userChoice === 'paper' && computerChoice === 'rock') ||
                    (userChoice === 'scissors' && computerChoice === 'paper')) {
-            result = 'You Win!';
+            result = 'User Wins';
             userScore++;
         } else {
-            result = 'You Lose!';
+            result = 'Computer Wins';
             computerScore++;
         }
 
@@ -55,6 +55,7 @@ $(document).ready(function() {
         if (!continueGame) {
             userScore = 0;
             computerScore = 0;
+            $('#result-text').text(''); // Clear the result text
             $('#user-score').text(`User: ${userScore}`);
             $('#computer-score').text(`Computer: ${computerScore}`);
             continueGame = true;
@@ -62,6 +63,6 @@ $(document).ready(function() {
     });
 
     $(document).on('click', '#no', function() {
-        $(document).hide();
+        window.close();
     });
 });
